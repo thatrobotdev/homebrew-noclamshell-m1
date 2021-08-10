@@ -30,6 +30,6 @@ class NoclamshellM1 < Formula
   end
 
   test do
-    system bin/"noclamshell-m1"
+    system bin/"noclamshell"
   end
 end
