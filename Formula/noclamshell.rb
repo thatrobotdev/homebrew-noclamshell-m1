@@ -1,14 +1,14 @@
-class NoclamshellM1 < Formula
+class Noclamshell < Formula
   desc "Sleep despite annoying clamshell mode"
   homepage "https://github.com/thatrobotdev/noclamshell"
   url "https://github.com/thatrobotdev/noclamshell.git", tag: "m1", revision: "29eae24d4d9b9e422602eb79b2f733c08f03f9f5"
   head "https://github.com/thatrobotdev/noclamshell.git", branch: "master"
 
   def install
-    bin.install "noclamshell-m1"
+    bin.install "noclamshell"
   end
 
-  plist_options manual: "noclamshell-m1"
+  plist_options manual: "noclamshell"
 
   def plist; <<~XML
     <?xml version="1.0" encoding="UTF-8"?>
