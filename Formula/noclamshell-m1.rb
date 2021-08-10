@@ -1,8 +1,8 @@
 class NoclamshellM1 < Formula
   desc "Sleep despite annoying clamshell mode"
-  homepage "https://github.com/cfstras/noclamshell"
-  url "https://github.com/cfstras/noclamshell.git"
-  head "https://github.com/cfstras/noclamshell.git", branch: "arm-m1-mac"
+  homepage "https://github.com/thatrobotdev/noclamshell"
+  url "https://github.com/thatrobotdev/noclamshell.git", tag: "m1", revision: "29eae24d4d9b9e422602eb79b2f733c08f03f9f5"
+  head "https://github.com/thatrobotdev/noclamshell.git", branch: "master"
 
   def install
     bin.install "noclamshell-m1"
