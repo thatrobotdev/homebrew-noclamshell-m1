@@ -1,14 +1,14 @@
-class Noclamshell < Formula
+class NoclamshellM1 < Formula
   desc "Sleep despite annoying clamshell mode"
-  homepage "https://github.com/pirj/noclamshell"
-  url "https://github.com/pirj/noclamshell.git", tag: "1.2", revision: "69c767fa1e5d3553fa76f4c2b99e167276eab0c3"
-  head "https://github.com/pirj/noclamshell.git", branch: "master"
+  homepage "https://github.com/cfstras/noclamshell"
+  url "https://github.com/cfstras/noclamshell.git"
+  head "https://github.com/cfstras/noclamshell.git", branch: "arm-m1-mac"
 
   def install
-    bin.install "noclamshell"
+    bin.install "noclamshell-m1"
   end
 
-  plist_options manual: "noclamshell"
+  plist_options manual: "noclamshell-m1"
 
   def plist; <<~XML
     <?xml version="1.0" encoding="UTF-8"?>
@@ -22,7 +22,7 @@ class Noclamshell < Formula
           <array>
             <string>bash</string>
             <string>-c</string>
-            <string>#{opt_bin}/noclamshell</string>
+            <string>#{opt_bin}/noclamshell-m1</string>
           </array>
       </dict>
     </plist>
@@ -30,6 +30,6 @@ class Noclamshell < Formula
   end
 
   test do
-    system bin/"noclamshell"
+    system bin/"noclamshell-m1"
   end
 end
